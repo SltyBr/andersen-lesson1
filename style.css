@@ -1,0 +1,12 @@
+.container{
+  max-width: 400px;
+}
+
+iframe{
+  height: 300px;
+  transform: scale(0.5);
+}
+
+#disabling:checked{
+  border: 3px solid red;
+}

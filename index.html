@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Parent</h2>
+    <button id="clear">Очистить</button>
+    <form action="/daughter.html" id="form1">
+      <div class="container">
+        <label for="login">
+          Имя
+          <input type="text" id="login" name="login" />
+        </label>
+        <textarea name="text" id="text" cols="30" rows="5"></textarea>
+        <input type="submit" value="Отправить дальше" style="width: 50%" />
+      </div>
+      <iframe src="/daughter.html" frameborder="0"></iframe>
+    </form>
+    <fieldset>
+      <legend>Вторая часть дз</legend>
+      <select name="select" id="select">
+        <option value="0">Выбери число</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <button type="reset">Сбросить</button>
+      <label for="check2"
+        >Нажми
+        <input type="checkbox" name="check2" id="check2" />
+      </label>
+      <h1>Привет мир!</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam,
+        sequi?
+      </p>
+      <img
+        srcset="
+          img/cat-320.jpg 320w,
+          img/cat-480.jpg 480w,
+          img/cat-640.jpg 800w
+        "
+        sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            (max-width: 800px) 680px,
+            800px"
+        src="cat.jpg"
+        alt="cat"
+      />
+      <div class="languages" style="font-size: 20px; display: flex; flex-direction: column;">
+        <label for="disabling" class="disabling-check">
+          <input type="checkbox" name="disabling" id="disabling">
+          Заблокировать
+        </label>
+        <label for="javaScript">
+          <input type="radio" name="programming-languages" value="JavaScript" id="javaScript">
+          JavaScript
+        </label>
+        <label for="python">
+          <input type="radio" name="programming-languages" value="Python" id="python">
+          Python
+        </label>
+        <label for="c++">
+          <input type="radio" name="programming-languages" value="C++" id="c++">
+          C++
+        </label>
+        <label for="java">
+          <input type="radio" name="programming-languages" value="Java" id="java">
+          Java
+        </label>
+        <label for="ruby">
+          <input type="radio" name="programming-languages" value="Ruby" id="ruby">
+          Ruby
+        </label>
+      </div>
+    </fieldset>
+    <script src="main.js"></script>
+  </body>
+</html>
